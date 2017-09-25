@@ -1,0 +1,15 @@
+@charset "UTF-8";
+/*普通变量*/
+/*默认变量【覆盖的方式也很简单，只需要重新声明下变量即可。】*/
+body {
+  background-color: #fff;
+  color: #333; }
+
+h3 {
+  font-size: 18px;
+  background-color: #eee; }
+
+strong {
+  color: #f23; }
+
+/*# sourceMappingURL=demo1.css.map */

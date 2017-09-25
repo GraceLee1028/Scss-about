@@ -38,7 +38,6 @@ input{border:0;outline: none;}
     margin-left:0;
   }
 }
-
 @mixin link-color($normal,$hover:$normal,$visited:$normal){
   color: $normal;
   &:hover{color: $hover;}
@@ -107,4 +106,3 @@ input{border:0;outline: none;}
   background-color: #6998ff;
   color:#fff;
 }
-
