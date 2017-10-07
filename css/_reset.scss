@@ -1,0 +1,24 @@
+header,footer,article,aside,p,h1,h2,h3,h4,h5,h6,table,img,a{
+  margin:0;
+  padding:0;
+}
+body{
+  line-height:1;
+}
+header,footer,menu,nav,article,aside,canvas{
+  display:block;
+}
+a{
+  text-decoration: none;
+}
+img{
+  font-size:0;
+  border:0;
+}
+ul{
+  list-style: none;
+}
+table{
+  border-collapse: collapse;
+  border-spacing: 0;
+}
