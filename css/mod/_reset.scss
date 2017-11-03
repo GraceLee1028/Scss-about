@@ -1,0 +1,29 @@
+$zero:0px;
+html{
+  font:20px sans-serif;
+}
+.zeroMP{
+  margin: $zero;
+  padding: $zero;
+}
+header,section,footer,main,aside,nav,article,figure{
+  display:block;
+  @extend .zeroMP;
+}
+html,body,ul,ol,p{
+  @extend .zeroMP;
+}
+video,object,embed,img{
+  max-width:100%;
+  height:auto;
+}
+img{
+  border: $zero;
+  vertical-align: top;
+}
+a{text-decoration: none;}
+input{outline: none;}
+::-moz-selection,::-webkit-keygen-select,::selection{
+  background-color: #6998ff;
+  color:#fff;
+}
