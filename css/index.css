@@ -1,6 +1,3 @@
-html {
-  font: 20px sans-serif; }
-
 .zeroMP, header, section, footer, main, aside, nav, article, figure, html, body, ul, ol, p {
   margin: 0px;
   padding: 0px; }
@@ -32,7 +29,8 @@ input {
   position: fixed;
   left: 0;
   top: 0;
-  background-color: #fff; }
+  background-color: #fff;
+  z-index: 99999; }
 
 @-webkit-keyframes rotate {
   0% {
@@ -242,5 +240,327 @@ input {
   -moz-animation-delay: -1s;
   -o-animation-delay: -1s;
   animation-delay: -1s; }
+
+.btn {
+  font-family: Roboto,sans-serif;
+  padding: .4rem 1.6rem;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -ms-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  transition: all 0.3s linear; }
+
+.btn-blue {
+  background: #049fbb;
+  border: 2px solid #049fbb;
+  color: #fff; }
+  .btn-blue:hover {
+    color: #fff; }
+
+.btn-blue-trans {
+  background: rgba(4, 159, 187, 0.7); }
+  .btn-blue-trans:hover {
+    background: #049fbb; }
+
+.btn-second {
+  background: transparent;
+  border: 2px solid #fff;
+  color: #fff; }
+  .btn-second:hover {
+    color: #049fbb;
+    background-color: #fff; }
+
+html {
+  font: 10px sans-serif; }
+  @media screen and (min-width: 321px) and (max-width: 375px) {
+    html {
+      font-size: 11px; } }
+  @media screen and (min-width: 376px) and (max-width: 414px) {
+    html {
+      font-size: 13px; } }
+  @media screen and (min-width: 415px) and (max-width: 639px) {
+    html {
+      font-size: 14px; } }
+  @media screen and (min-width: 640px) and (max-width: 719px) {
+    html {
+      font-size: 15px; } }
+  @media screen and (min-width: 720px) and (max-width: 768px) {
+    html {
+      font-size: 16px; } }
+  @media screen and (min-width: 768px) {
+    html {
+      font-size: 18px; } }
+  @media screen and (min-width: 992px) {
+    html {
+      font-size: 20px; } }
+
+body {
+  font-size: .8rem; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: Roboto,sans-serif; }
+
+ul {
+  list-style: none; }
+  ul li {
+    list-style-image: none;
+    list-style-type: none;
+    margin-left: 0; }
+
+.wrapper {
+  min-height: 100%; }
+
+.header-container {
+  background: #049fbb url("../imgs/index/header-bg.jpg") no-repeat center;
+  background-size: cover;
+  color: #fff;
+  padding-top: 1.5rem;
+  padding-bottom: 4.5rem; }
+  @media screen and (min-width: 768px) {
+    .header-container {
+      min-height: 36rem; } }
+  .header-container .container {
+    padding-bottom: .75rem; }
+
+.float-none-center {
+  float: none !important;
+  text-align: center; }
+
+.logo {
+  text-transform: uppercase;
+  font-size: .9rem;
+  line-height: 2rem;
+  margin: 0; }
+  .logo img {
+    vertical-align: middle; }
+  .logo.left {
+    float: left; }
+    @media screen and (min-width: 768px) {
+      .logo.left {
+        float: none;
+        text-align: center; } }
+    @media screen and (min-width: 992px) {
+      .logo.left {
+        float: left;
+        text-align: left; } }
+
+.header-nav.right {
+  float: none; }
+  @media screen and (min-width: 768px) {
+    .header-nav.right {
+      padding-top: .8rem;
+      text-align: center; } }
+  @media screen and (min-width: 992px) {
+    .header-nav.right {
+      float: right; } }
+.header-nav .navbar-toggle {
+  margin-top: 3px;
+  margin-bottom: 3px; }
+.header-nav .navbar-collapse {
+  box-shadow: none; }
+.header-nav .icon-bar {
+  background-color: #fff; }
+@media screen and (min-width: 768px) {
+  .header-nav .nav {
+    float: none;
+    display: inline-block;
+    margin: 0 auto; } }
+.header-nav .nav.show {
+  display: block; }
+.header-nav .nav li.active a {
+  color: #049fbb; }
+.header-nav .nav a {
+  text-transform: uppercase;
+  color: #fff;
+  -webkit-transition: color 300ms linear;
+  -moz-transition: color 300ms linear;
+  -ms-transition: color 300ms linear;
+  -o-transition: color 300ms linear;
+  transition: color 300ms linear; }
+  @media screen and (min-width: 768px) {
+    .header-nav .nav a {
+      padding-top: 10px;
+      padding-bottom: 10px; } }
+  .header-nav .nav a:hover {
+    color: #049fbb;
+    background-color: transparent; }
+
+.header-des {
+  padding-top: 3rem;
+  padding-bottom: 1rem;
+  max-width: 31rem;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px; }
+  @media screen and (min-width: 768px) {
+    .header-des {
+      padding-top: 4.5rem;
+      padding-bottom: 2rem; } }
+  @media screen and (min-width: 992px) {
+    .header-des {
+      padding-top: 6rem;
+      padding-bottom: 2.5rem; } }
+  .header-des h2.title {
+    font-weight: 100;
+    font-size: 1.8rem;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+    line-height: 1.4; }
+    .header-des h2.title span {
+      display: block;
+      text-align: center;
+      font-size: 1.6rem;
+      font-weight: 700; }
+  .header-des h3 {
+    font-size: 1rem;
+    margin-top: 1.25rem;
+    margin-bottom: 2.25rem; }
+  .header-des * {
+    text-align: center; }
+  .header-des .btn {
+    margin-bottom: 1rem; }
+
+@media screen and (min-width: 768px) {
+  .btn-wrapper .btn:last-child {
+    margin-left: 1rem; } }
+.btn-wrapper .btn {
+  font-weight: 600;
+  text-transform: uppercase; }
+
+.section .title {
+  font-size: 1.8rem;
+  margin-bottom: .75rem;
+  margin-top: 0; }
+
+.text-highlight {
+  color: #024a57; }
+
+/*what-we-do*/
+.what-we-do {
+  padding: 4rem 0; }
+  .what-we-do .abstract {
+    color: #666;
+    font-size: .9rem;
+    font-weight: 300;
+    margin-bottom: 4.5rem; }
+
+.ser-lyric, .ser-song {
+  width: 7rem;
+  height: 7rem;
+  line-height: 7rem;
+  color: #fff;
+  margin: 0 auto;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  opacity: 0.7;
+  -ms-filter: alpha(opacity=70); }
+
+.ser-lyric {
+  background-color: #049fbb; }
+  @media screen and (min-width: 768px) {
+    .ser-lyric {
+      float: right;
+      margin-right: -1.3rem; } }
+
+.ser-song {
+  background-color: #fb866a; }
+  @media screen and (min-width: 768px) {
+    .ser-song {
+      float: left;
+      margin-left: -1.3rem; } }
+
+.lyric-list, .song-list {
+  font-size: .9rem;
+  margin-bottom: 1.5rem;
+  padding-top: 1.5rem;
+  position: relative; }
+  @media screen and (min-width: 768px) {
+    .lyric-list, .song-list {
+      padding-top: 10.5rem; } }
+  .lyric-list li, .song-list li {
+    margin-bottom: 1.5rem;
+    font-size: .9rem;
+    font-weight: 600;
+    color: #666; }
+
+.small {
+  font-size: .7rem;
+  color: #999;
+  font-weight: 400; }
+
+@media screen and (min-width: 768px) {
+  .lyric-list {
+    text-align: right;
+    padding-right: 4rem; } }
+
+@media screen and (min-width: 768px) {
+  .song-list {
+    text-align: left;
+    padding-left: 4rem; } }
+
+@media screen and (min-width: 768px) {
+  .lyric-list:before, .song-list:before {
+    content: "";
+    display: inline-block;
+    width: 0.5rem;
+    height: 0.5rem;
+    position: absolute;
+    top: 8.5rem;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%; }
+
+  .lyric-list:before {
+    background-color: #049fbb;
+    right: 1.95rem; }
+
+  .song-list:before {
+    background-color: #fb866a;
+    left: 1.95rem; }
+
+  .lyric-list:after, .song-list:after {
+    content: "";
+    width: 1px;
+    height: 8.7rem;
+    background-color: #e8e8e8;
+    position: absolute;
+    top: 9rem; }
+
+  .lyric-list:after {
+    right: 2.2rem; }
+
+  .song-list:after {
+    left: 2.2rem; } }
+.other-services h3 {
+  font-size: 14px;
+  color: #fb866a;
+  margin-top: 1rem;
+  margin-bottom: .5rem; }
+.other-services p .ser-name {
+  font-size: .9rem;
+  color: #666; }
+
+.favorite {
+  padding: 3rem 0;
+  background-color: #049fbb;
+  color: #fff; }
+  .favorite .title {
+    margin-top: 0;
+    margin-bottom: 1.5rem; }
+
+.fav-list li {
+  text-align: center; }
+  @media all and (max-width: 991px) {
+    .fav-list li {
+      margin-bottom: 1.5rem; } }
+  .fav-list li img {
+    display: inline-block;
+    width: 8rem;
+    height: 8rem;
+    margin: 0 auto; }
 
 /*# sourceMappingURL=index.css.map */

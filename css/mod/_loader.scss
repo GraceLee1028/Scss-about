@@ -7,6 +7,7 @@
   left:0;
   top:0;
   background-color: #fff;
+  z-index:99999;
 }
 @-webkit-keyframes rotate {
   0%{
@@ -128,10 +129,10 @@
   @include animation($animation:bounce 2s infinite ease-in-out);
 }
 .point-one{
-  background-color: #049fbb;
+  background-color: $theme-color;
 }
 .point-two{
-  background-color: #fb866a;
+  background-color: $yellow;
   margin-top:-20%;
   @include animation-pro(delay,-1s);
 }

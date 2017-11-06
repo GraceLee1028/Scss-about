@@ -77,12 +77,12 @@
     clear:both;
   }
 }
-@mixin bg-opacity($opacity:.5){
-  background: rgb(0,0,0); /*The Fallback color*/
-  background: rgba(0, 0, 0,$opacity);
-  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(GradientType=1,startColorstr=#80000000,endColorstr=#80000000)"; /*Filter for IE8 */
-  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=1,startColorstr=#80000000, endColorstr=#80000000); /*Filter for older IEs */
-}
+//@mixin bg-opacity($opacity:.5){
+//  background: rgb(0,0,0); /*The Fallback color*/
+//  background: rgba(0, 0, 0,$opacity);
+//  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(GradientType=1,startColorstr=#80000000,endColorstr=#80000000)"; /*Filter for IE8 */
+//  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=1,startColorstr=#80000000, endColorstr=#80000000); /*Filter for older IEs */
+//}
 @mixin cursor-color($color,$textColor:#333){
   color: $color;/*光标颜色*/
   text-shadow: 0 0 0 $textColor;/*文本颜色*/
@@ -99,4 +99,12 @@
     -webkit-text-fill-color: initial;
     text-overflow: ellipsis;
   }
+}
+//transparent
+@mixin property-transparent($property,$color,$opacity){
+  #{$property}: transparentize($color,1 - $opacity);
+}
+@mixin opacity($opacity){
+  opacity: $opacity;
+  -ms-filter: alpha(opacity = $opacity * 100);
 }
