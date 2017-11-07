@@ -89,15 +89,24 @@
   -webkit-text-fill-color: transparent;/*文本变成镂空*/
   @supports (caret-color:red){
     caret-color:$color;/*光标颜色*/
-    color:#333;
+    color:$textColor;
   }
+}
+@mixin placeholder($color){
+  color:$color;
+  text-shadow: none;
+  -webkit-text-fill-color: initial;
+  text-overflow: ellipsis;
 }
 @mixin placeholder-color($color) {
   &::-webkit-input-placeholder{
-    color:$color;
-    text-shadow: none;
-    -webkit-text-fill-color: initial;
-    text-overflow: ellipsis;
+    @include placeholder($color)
+  }
+  &::-moz-placeholder{
+    @include placeholder($color)
+  }
+  &:-ms-input-placeholder{
+    @include placeholder($color)
   }
 }
 //transparent
