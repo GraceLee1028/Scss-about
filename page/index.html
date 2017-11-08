@@ -12,6 +12,7 @@
     <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
     <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="shortcut icon" href="../imgs/index/flower.ico"  type="image/x-icon">
+    <link rel="stylesheet" href="../plugin/animate.css">
     <link rel="stylesheet" href="../css/index.css">
     <!--[if lt IE 9]>
     <script src="https://cdn.bootcss.com/html5shiv/r29/html5.min.js"></script>
@@ -28,13 +29,13 @@
 <div class="wrapper">
     <div id="home" class="header-container">
         <header class="container">
-            <h1 class="logo left">
+            <h1 class="logo left wow rollIn" data-wow-duration="1s">
                 <a href="#">
                     <img src="../imgs/index/logo.png" alt="logo">
                 </a>
                 <span>made lea</span>
             </h1>
-            <nav class="header-nav right" role="navigation">
+            <nav class="header-nav right wow fadeInRight" data-wow-duration="1s" role="navigation">
                 <div class="navbar-header">
                     <button class="navbar-toggle" type="button" data-target="#page-nav">
                         <span class="sr-only">Toggle navigation</span>
@@ -53,7 +54,7 @@
                 </div>
             </nav>
         </header>
-        <section class="header-des">
+        <section class="header-des wow fadeInUp" data-wow-duration="1s" data-wow-delay=".6s">
             <h2 class="title">Effective UX and UI Design <span>for modern websites and web apps</span></h2>
             <h3 class="quote">We believe good design is good business</h3>
             <div class="btn-wrapper">
@@ -65,27 +66,27 @@
     </div>
     <section id="what-we-do" class="what-we-do section">
         <div class="container text-center">
-            <h2 class="title text-highlight">What we do</h2>
-            <p class="abstract">We only do what we are good at...</p>
+            <h2 class="title text-highlight wow zoomIn">What we do</h2>
+            <p class="abstract slideInLeft">We only do what we are good at...</p>
             <div class="services">
                 <div class="col-md-6 col-sm-6 col-xs-12">
-                    <h3 class="ser-lyric">lyric</h3>
-                    <ul class="lyric-list">
+                    <h3 class="ser-lyric wow fadeInLeft" data-wow-duration=".8s" data-wow-delay="200ms">lyric</h3>
+                    <ul class="lyric-list wow fadeInUp" data-wow-duration=".8s" data-wow-delay="800ms">
                         <li>Information Architecture</li>
                         <li>User Journey <small class="small">(OmniGraffle)</small></li>
                         <li>User Journey <small class="small">(music)</small></li>
                     </ul>
                 </div>
                 <div class="col-md-6 col-sm-6 col-xs-12">
-                    <h3 class="ser-song">song</h3>
-                    <ul class="song-list">
+                    <h3 class="ser-song wow fadeInRight" data-wow-duration="1s" data-wow-delay="200ms">song</h3>
+                    <ul class="song-list wow fadeInUp" data-wow-duration="1s" data-wow-delay="800ms">
                         <li>Information Architecture</li>
                         <li>Swing Together</li>
                         <li>People Revel</li>
                     </ul>
                 </div>
             </div>
-            <aside class="other-services">
+            <aside class="other-services wow fadeInUpBig" data-wow-duration="1s" data-wow-delay="1s">
                 <h3>We also help with:</h3>
                 <p>
                     <span class="ser-name">Singing and dancing</span><br>
@@ -98,12 +99,12 @@
         <div class="container">
             <h2 class="title">Who is my favorite?</h2>
             <ul class="row fav-list">
-                <li class="col-md-2 col-sm-4 col-xs-4"><img src="../imgs/index/hu.jpg" alt="胡歌"></li>
-                <li class="col-md-2 col-sm-4 col-xs-4"><img src="../imgs/index/smallWhite.jpg" alt="白敬亭"></li>
-                <li class="col-md-2 col-sm-4 col-xs-4"><img src="../imgs/index/xiang.jpg" alt="陈翔"></li>
-                <li class="col-md-2 col-sm-4 col-xs-4"><img src="../imgs/index/xuan.jpg" alt="黄轩"></li>
-                <li class="col-md-2 col-sm-4 col-xs-4"><img src="../imgs/index/yang.jpg" alt="杨洋"></li>
-                <li class="col-md-2 col-sm-4 col-xs-4"><img src="../imgs/index/chen.jpg" alt="胡歌"></li>
+                <li class="col-md-2 col-sm-4 col-xs-4 wow fadeInLeft" data-wow-duration=".4s" data-wow-delay=".2s"><img src="../imgs/index/hu.jpg" alt="胡歌"></li>
+                <li class="col-md-2 col-sm-4 col-xs-4 wow fadeInLeft" data-wow-duration=".4s" data-wow-delay=".2s"><img src="../imgs/index/smallWhite.jpg" alt="白敬亭"></li>
+                <li class="col-md-2 col-sm-4 col-xs-4 wow fadeInLeft" data-wow-duration=".4s" data-wow-delay=".2s"><img src="../imgs/index/xiang.jpg" alt="陈翔"></li>
+                <li class="col-md-2 col-sm-4 col-xs-4 wow fadeInRight" data-wow-duration=".4s" data-wow-delay=".2s"><img src="../imgs/index/xuan.jpg" alt="黄轩"></li>
+                <li class="col-md-2 col-sm-4 col-xs-4 wow fadeInRight" data-wow-duration=".4s" data-wow-delay=".2s"><img src="../imgs/index/yang.jpg" alt="杨洋"></li>
+                <li class="col-md-2 col-sm-4 col-xs-4 wow fadeInRight" data-wow-duration=".4s" data-wow-delay=".2s"><img src="../imgs/index/chen.jpg" alt="胡歌"></li>
             </ul>
         </div>
     </section>
@@ -113,5 +114,8 @@
 </footer>
 </body>
 <script src="../plugin/jquery.min.js"></script>
+<!--动画 animation-->
+<script src="https://cdn.bootcss.com/wow/1.1.2/wow.js"></script>
+<script src="../js/animate.js"></script>
 <script src="../js/index.js"></script>
 </html>

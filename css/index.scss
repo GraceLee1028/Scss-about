@@ -29,6 +29,8 @@ ul{
 }
 .wrapper{
   min-height:100%;
+  width:100%;
+  overflow: hidden;
 }
 $header-color:#fff;
 .header-container{
@@ -76,8 +78,10 @@ $header-color:#fff;
     }
     @media screen and(min-width:992px) {
       float: right;
+      padding-top:0;
     }
     float:none;
+    padding-top:0;
   }
   .navbar-toggle{
     margin:{
