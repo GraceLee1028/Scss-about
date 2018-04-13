@@ -1,0 +1,22 @@
+@charset "UTF-8";
+/*
+占位符：和@extend配合使用，当某部分样式不会在页面使用时，就用%占位符代替
+*/
+.mp, .box, .content {
+  margin: 0 auto;
+  padding: 10px 15px; }
+
+.box {
+  font-weight: 700;
+  color: #000; }
+
+/*
+此处注意extend和mixin的编译生成的css的差别:extend中公用的样式会合在一起，而mixin不会
+*/
+.box {
+  border: 1px solid blue; }
+
+.content {
+  border: 1px solid blue; }
+
+/*# sourceMappingURL=new-learn.css.map */

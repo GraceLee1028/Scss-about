@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": ";AACA;;EAEE;AACF,mBAAG;EACD,MAAM,EAAC,MAAM;EACb,OAAO,EAAC,SAAS;;AAEnB,IAAW;EACT,WAAW,EAAE,GAAG;EAChB,KAAK,EAAC,IAAI;;AASZ;;EAEE;AAIF,IAAI;EAFF,MAAM,EAAC,cAAc;;AAKvB,QAAQ;EALN,MAAM,EAAC,cAAc",
+"sources": ["new-learn.scss"],
+"names": [],
+"file": "new-learn.css"
+}
