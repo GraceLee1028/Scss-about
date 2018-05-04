@@ -7,4 +7,6 @@ new-learn:
 index.html
 通过scss学习的一个响应式网站
 【把bootstrap和animate结合，仿上面网站】
+wow.js的应用，响应式页面
+
 
